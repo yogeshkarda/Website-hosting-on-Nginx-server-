@@ -1,1 +1,1 @@
-# Website-hosting-on-Nginx-server-
+Website hosting on Nginx server
