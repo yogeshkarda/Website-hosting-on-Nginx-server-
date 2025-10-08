@@ -11,3 +11,15 @@ This project demonstrates how to host a **static website** (HTML/CSS/JS) on a **
 
 **Flow:**
 `Client → Nginx (HTTPS) → Apache (Static Website Files)`
+## 🚀 Step-by-Step Deployment Guide
+
+### 🖥️ 1. Launch EC2 Instance
+1. Log in to your AWS Console.  
+2. Launch an **Amazon Linux 2** or **Ubuntu 22.04** instance.  
+3. Configure:
+   - **Security Group**: Allow ports `22`, `80`, `443`.  
+   - **Key Pair**: Create or use an existing key pair.  
+4. Connect to instance via SSH:
+   ```bash
+   I access this linux server using putty
+
