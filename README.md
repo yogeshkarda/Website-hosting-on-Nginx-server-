@@ -31,4 +31,24 @@ This project demonstrates how to host a **static website** (HTML/CSS/JS) on a **
 Edit Nginx config to act as a reverse proxy:
 
 sudo nano /etc/nginx/nginx.conf
+🌐 4. Configure Domain and DNS
 
+Go to your domain registrar (e.g., GoDaddy / Namecheap) and add these A records:
+
+Type	Name	Value (EC2 Public IP)	TTL
+A		 @       13.203.197.231        600
+A		 www    13.203.197.231        600
+
+🖼️ Screenshot #1: DNS Record Configuration (GoDaddy/Cloudflare panel)
+
+Verify propagation:
+nslookup cloudtechkardak.in
+🔒 5. Install Certbot & Issue SSL Certificate
+
+Install Certbot:
+
+sudo yum install certbot python3-certbot-nginx -y
+
+Run certificate issuance:
+
+sudo certbot --nginx -d cloudtechkardak.in -d www.cloudtechkardak.in
