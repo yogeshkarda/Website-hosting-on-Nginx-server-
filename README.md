@@ -22,4 +22,8 @@ This project demonstrates how to host a **static website** (HTML/CSS/JS) on a **
 4. Connect to instance via SSH:
    ```bash
    I access this linux server using putty
-
+Install and Configure Nginx
+sudo yum install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
