@@ -27,3 +27,8 @@ This project demonstrates how to host a **static website** (HTML/CSS/JS) on a **
         sudo systemctl start nginx
         sudo systemctl enable nginx
         sudo systemctl status nginx
+
+Edit Nginx config to act as a reverse proxy:
+
+sudo nano /etc/nginx/nginx.conf
+
