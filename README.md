@@ -23,7 +23,7 @@ This project demonstrates how to host a **static website** (HTML/CSS/JS) on a **
    ```bash
    I access this linux server using putty
 ⚙️ 3. Install and Configure Nginx
-sudo amazon-linux-extras install nginx1 -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo systemctl status nginx
+        sudo yum install nginx -y
+        sudo systemctl start nginx
+        sudo systemctl enable nginx
+        sudo systemctl status nginx
